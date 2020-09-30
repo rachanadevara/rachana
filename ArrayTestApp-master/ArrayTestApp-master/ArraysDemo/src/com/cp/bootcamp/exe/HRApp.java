@@ -83,7 +83,9 @@ public class HRApp {
 		String project=e.getProject();
 		if(project=="dnd")
 		{
-		int r=(108/100)*(e.getSalary());
+			System.out.println("eneter percentage");
+			int x=sc.nextInt();
+		int r=((100+x)/100)*(e.getSalary());
 		e.setSalary(r);
 		System.out.println(e.getSalary());
 		
